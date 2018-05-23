@@ -1,0 +1,19 @@
+body
+{
+  margin: 0;
+  padding:0;
+  height: 100vh;
+  background: url('img/ebackground.jpg') no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.raport
+{
+	width: 100%;
+	text-align:center;
+	font-family: 'Play', sans-serif;
+	font-size: 34px;
+	font-weight: bold;
+}

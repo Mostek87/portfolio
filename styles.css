@@ -1,0 +1,554 @@
+*
+{
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+}	
+	
+body
+{
+ margin: 0;
+ padding: 0; 
+ max-width: 1400px;
+}
+
+@keyframes sunlight{
+	
+	from{filter: brightness(5%);}
+	to{filter: brightness(150%);}
+	
+}
+
+@keyframes show-info
+{
+	from{transform: translateX(-150%);}
+	to{transform: translateX(0);}
+}
+
+@keyframes rotate-rack
+{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}  
+}
+
+.navigation-list
+{
+	margin:0;
+	padding:0 0 0 5px;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	 height: 41px;
+}
+
+
+
+.navigation
+{
+   box-shadow: 1px 1px 2px 2px black;
+  position: fixed;
+  top:0;
+  width: 100%;  
+  z-index: 2; 
+background: white; 
+}
+
+.navigation-link
+{
+	font-size: 2.5vw;
+	color:gray;
+	text-decoration: none;
+}
+
+.navigation-link:hover
+{
+  color:#00b5ee;
+transition: color 2s;  
+}
+
+.navigation-list-element
+{
+  display: inline; 
+  margin: 0 5px;  
+}
+
+.navigation-icon
+{
+  vertical-align: top;
+  height: 30px; 
+ margin-right: 5px;  
+}
+
+
+.about-me-background
+{
+ background: url('img/star.jpg') no-repeat center;
+ background-size: cover;
+ overflow: hidden;
+ filter: brightness(30%);
+ animation: sunlight 3s linear 0.5s;
+ animation-fill-mode: forwards;
+}
+
+.about-me-information
+{
+  border-radius: 10px; 
+  margin:150px auto;  
+  background: rgba(0,0,0,0.5);
+  width: 80%;
+  transform: translateX(-150%);
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #660000;
+  animation: show-info 2s linear 3s; 
+  animation-fill-mode: forwards;
+  box-shadow: 1px 1px 2px 2px black;
+}
+
+.face
+{
+	border-radius: 50%;
+	border: 2px solid gray;
+	display: block;
+	float: left;
+}
+
+.header
+{
+	text-align: center;
+	margin: 8px 0px;
+	font-size: 20px;
+	width: 100%;
+	color: white;
+}
+
+.coupling-header
+{
+	text-align: center;
+	padding: 10px;
+	background: black;
+	color: white;
+	margin: 0;
+}
+
+.about-me-text
+{
+  font-size: 17px;
+  color:white;
+}
+
+.about-skills-text
+{
+  color: black;
+ font-size: 17px;  
+}
+
+.interest-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.interest-item
+{
+	border-radius: 10px;
+	width: 180px;
+	height: 110px;
+	line-height: 110px;
+	text-align:center;
+	color: black;
+	font-size: 26px;
+    font-weight: bold;
+	border: 1px solid #660000;
+	box-shadow: 1px 1px 2px 2px black;
+	margin-bottom: 5px;
+}
+
+.poker
+{
+	background: url('img/poker.jpg') no-repeat center;
+	background-size:cover;
+}
+
+.diving
+{
+	background: url('img/diving.jpg') no-repeat center;
+	background-size:cover;
+}
+
+.space
+{
+	background: url('img/space.jpeg') no-repeat center;
+	background-size:cover;
+}
+
+.science
+{
+	background: url('img/science.jpg') no-repeat center;
+	background-size:cover;
+	line-height: 35px;
+    padding: 20px;
+}
+
+.skills-background
+{
+ background: url('img/skill.jpg') no-repeat center;
+ background-size: cover;
+ border: 0.1px solid transparent;
+}
+
+.skills-list
+{
+  width: 80%;
+  border: 2px solid #660000; 
+  border-radius: 7px; 
+  margin: 120px auto;  
+  background: url('img/skill.jpg') no-repeat center;
+  background-size: cover;
+   box-shadow: 1px 1px 2px 2px black;
+}
+
+.about-skills-text
+{
+  background: rgba(0,0,0,0.9);
+  color: white;
+  font-size: 20px;
+  border-radius: 7px 7px 0 0;
+  padding: 5px;
+  text-align: center;
+}
+
+.skills-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	background: rgba(66,00,00,0.8);
+}
+
+.skill
+{
+  height: 80px;
+  margin: 20px;
+}
+
+.skill:hover
+{
+  transition: filter 2s;
+  filter: saturate(8);	
+}
+
+.mysql
+{
+	height: 110px;
+}
+
+.porn-empire-logo
+{
+	width: 200px;
+	height: auto;
+}
+
+.projects-background
+{
+	background: url('img/project.jpg') no-repeat center;
+	background-size: cover;
+	border: 0.1px solid transparent;
+	position: relative;
+}
+
+.rack-decoration
+{
+	position: absolute;
+	right: 35px;
+	top: 35px;
+	animation: rotate-rack 7s linear 0s infinite;
+}
+
+.projects-container
+{
+	width: 80%;
+	background: rgba(0,0,0,0.8);
+	margin: 150px auto;
+	border-radius: 7px;
+	box-shadow: 2px 2px 1px 1px black;
+	border: 1px solid silver;
+	
+}
+
+.projects-list
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-evenly;  
+}
+
+.information-about-projects
+{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding: 5px 5px 20px 5px;
+	border-radius: 7px 7px 0 0;
+}
+
+.project
+{
+	border: 2px solid #660000;
+	width: 300px;
+	height: 160px;
+	border-radius: 7px;
+	margin-bottom: 5px;
+	line-height: 160px;
+	text-align: center;
+	font-size: 22px;
+	color: black;
+	font-weight: bold;
+	position: relative;
+}
+
+.pop-up-info
+{
+	position: absolute;
+	width: 100%;
+	height:0;
+	bottom: 0;
+	overflow: hidden;
+	background: rgba(66,00,00, 0.95);
+	border-radius: 5px;
+	transition: height 2s;
+	line-height: 1.2;
+	font-size: 15px;
+}
+
+.used-technologies-list
+{
+	list-style-type: none;
+	padding: 5px 0 5px 0;
+	margin:0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.used-technology
+{
+  height:25px;
+ margin: 7px;  
+}
+
+.project-description
+{
+  padding: 6px;
+  color: white;
+  text-align: center;
+}
+
+.project:hover .pop-up-info
+{
+	height: 100%;
+}
+
+.porn-empire
+{
+    background: url('img/pi-logo.png') no-repeat center, black;
+}
+
+.nord-team-service
+{
+	background: url('img/pipes.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.portfolio
+{
+  background: url('img/portfolio.jpg') no-repeat center;
+  background-size: cover;	
+}
+
+.links-container
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.created-website-link
+{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.created-website-link:hover
+{
+	text-decoration: underline;
+}
+
+.contact-section
+{
+  background: url('img/contact.jpg') no-repeat center;
+  background-size:cover;
+  border-bottom: 0.1px solid black;
+}
+
+.contact-information
+{
+	padding: 5px;
+	color: white;
+	text-align: center;
+	font-size: 19px;
+}
+
+.email-adress
+{
+   text-decoration: none;
+  color: white;
+ font-size: 28px;  
+}
+
+.email-adress:hover
+{
+  text-decoration: underline;	
+}
+
+.contact-form
+{
+  min-width: 320px;
+  width: 60%;
+  margin: 150px auto;
+  box-shadow: 2px 2px 1px 1px black;
+  border-radius: 10px;
+  border: 2px solid silver;
+  background: rgba(0,0,0,0.7);
+}
+
+.controls
+{
+  width: 90%;
+  margin: 0 auto; 
+  padding: 7px 0;
+ display: flex;
+justify-content: space-between; 
+}
+
+.submit-button, .reset-button
+{
+  font-size: 18px;
+  padding: 8px; 
+border-radius: 4px;
+color: white; 
+cursor: pointer;
+}
+
+.submit-button
+{
+  background:#2BF00C;
+  border: 1px solid #2BF00C; 
+}
+
+.reset-button
+{
+  background:#F70505;
+  border: 1px solid #F70505;  
+}
+
+.user-contact-data:focus, .user-message:focus, .control-question:focus
+{
+	opacity: 0.8;
+}
+
+.user-contact-data, .user-message, .control-question
+{
+   border-radius: 4px;
+   border: 1px solid silver;
+   background: black;  
+   width: 90%; 
+   margin: 0 auto; 
+   display: block; 
+   color: white; 
+   font-size: 25px;    
+}
+
+.user-contact-data
+{
+ height: 28px;	
+}
+
+.form-label
+{
+  display: block;
+  text-align: center;
+  color: white; 
+  margin: 8px 0;
+}
+
+.user-message
+{
+ height: 200px;	
+}
+
+.cybertron-footer
+{
+  text-align:center;
+  padding: 15px;
+  border-top: 3px solid silver; 
+  border-bottom: 3px solid silver;  
+  background: black;
+  color: white;
+  font-size: 25px;
+}
+
+
+
+
+
+@media only screen and (min-width: 391px) and (max-width: 430px)
+{
+	.navigation-link
+	{
+	  font-size: 14px;
+	}
+	
+	.navigation-icon
+	{
+		height: 20px;
+	}
+	
+	.navigation-list
+	{
+		padding: 0;
+	}
+	
+	.navigation-list-element
+	{
+		margin: 0 2px;
+	}
+}
+
+@media only screen and (max-width: 390px)
+{
+	.navigation-icon
+	{
+		display: none;
+	}
+	
+	.navigation-list
+	{
+		justify-content: space-evenly;
+	}
+	
+	.navigation-link
+	{
+	  font-size: 15px;
+	}
+	
+}
