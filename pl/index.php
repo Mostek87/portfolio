@@ -124,7 +124,7 @@
 				  </ul>
 				    <div class="links-container">
 					  <a class="created-website-link" href="http://www.portfolio.pl">Na żywo</a>
-					  <a class="created-website-link" href="">Github</a>
+					  <a class="created-website-link" href="https://github.com/Mostek87/portfolio">Github</a>
 					</div>
 			  </div>
 			</li>
