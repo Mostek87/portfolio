@@ -1,4 +1,4 @@
-(function()
+$(function()
 {
 	var previousOffset = window.pageYOffset;
 	var previousRotate = 0;
@@ -16,4 +16,4 @@
 		 
    });
 	
-}())
+});
